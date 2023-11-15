@@ -24,18 +24,21 @@ module load plink2/1.90beta3
 # Directories
 GWAS_DIR=/data/Genotyping/2020-06-09/Output/
 OUTPUT_DIR=/data/1000_genome/shared_project/plink_files/GRS1/
+INPUT_VCF=$(GWAS_DIR)merged_dbsnp142_updated.vcf.gz                           ## use this as input if the genotyped data is in vcf format
+
+#Extract GRS1 SNPs (using a list of SNP IDs as a single column file)
+plink --noweb --bfile $INPUT_VCF --extract 30_GRS1.txt --make-bed --out $(OUTPUT_DIR)grsT1D1
 
 
-# SNPs to extract
+# Score file
 SCORE_FILE_GRS1=${OUTPUT_DIR}score_GRS1.txt
 
-# Imputed file set
-INPUT_VCF=$(GWAS_DIR)merged_dbsnp142_updated.vcf.gz                           ## use this as input if the genotyped data is in vcf format
-INPUT_FILE=/data/1000_genome/shared_project/plink_files/GRS1/grsT1D1_imputed  ## use this as input if the input is in plink format
+# Input files for creating GRS
+INPUT_FILE=$(OUTPUT_DIR)grsT1D1 
 
 # Output data
-OUT_FILE_GRS1=${OUTPUT_DIR}grsT1D1_score_imputed
-OUT_FILE_HLA=${OUTPUT_DIR}grsT1D1_HLA_imputed
+OUT_FILE_GRS1=${OUTPUT_DIR}grsT1D1_score
+OUT_FILE_HLA=${OUTPUT_DIR}grsT1D1_HLA
 
 ###PLINK1.9 ANALYSIS
 # T1D score of 28 SNPS without DR3/DR4 genotypes
