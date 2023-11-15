@@ -3,7 +3,7 @@
 # Script for extracting SNPs for T1D GRSs using genotyping data  in vcf or plink format (.bim, .bed and .fam files)
 # For this exercise, A list of 30 Type 1 Diabetes risk SNPs (GRS1) were retrieved from (PMID: 26577414)
 #Odds Ratio (ORs) for each of the non-HLA SNPs are obtained from T1Dbase (https://www.t1dbase.org). ORs for the DR3/DR4-DQ8 haplotype (captured by rs2187668 and rs7454108) that tags the DR3/DR4-DQ8 region as decribed by Barker et al. (PMID: 18694972) were obatined from (PMID: 25374276) and ORs for the remaining HLA alleles
-were obtained from Winkler et al. (PMID: 20798335 and 19143813). The 30 SNPs , the minor allele and their respective Odd's rations are saved as a text file named score_GRS1.txt which will be used in downstream analysis. A glimpse of this file is shown below:
+# were obtained from Winkler et al. (PMID: 20798335 and 19143813). The 30 SNPs , the minor allele and their respective Odd's rations are saved as a text file named score_GRS1.txt which will be used in downstream analysis. A glimpse of this file is shown below:
 
 head score_GRS1.txt
 ##SNP	A1	WT
