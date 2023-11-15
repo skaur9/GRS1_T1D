@@ -23,18 +23,18 @@ summary(Cases)
 # Length:2847        Min.   : 6.61  
 # Class :character   1st Qu.:14.10  
 # Mode  :character   Median :15.18  
-                    Mean   :15.04  
-                    3rd Qu.:16.14  
-                    Max.   :18.77 
+#                    Mean   :15.04  
+#                    3rd Qu.:16.14  
+#                    Max.   :18.77 
       
 summary(Controls)
  #    IID              GRS1_Score   
  #Length:1982        Min.   : 5.71  
  #Class :character   1st Qu.:11.11  
  #Mode  :character   Median :12.56  
-                    Mean   :12.42  
-                    3rd Qu.:13.93  
-                    Max.   :17.89
+ #                   Mean   :12.42  
+ #                   3rd Qu.:13.93  
+ #                   Max.   :17.89
 
 
 
