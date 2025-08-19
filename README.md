@@ -1,4 +1,4 @@
-# Genetic risk score analysis
+# Genetic risk score analysis (GRS1) for Type 1 Diabetes 
 
 This repository has several files for generating Genetic risk Scores using Type 1 Diabetes SNPs as an example and should be used in the following order:
 
